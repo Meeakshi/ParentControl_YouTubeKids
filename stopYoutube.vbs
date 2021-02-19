@@ -2,8 +2,6 @@ Dim Processes,Process
 Dim CurrTime, stoptime
 CurrTime = Now()
 stoptime = DateAdd("h", 1, now())
-msgbox(Now()+1)
-msgbox(DateAdd("h", 1, now()))
 
 Do While(stoptime = Now())
 Set Processes = GetObject("winmgmts:").InstancesOf("Win32_Process")
