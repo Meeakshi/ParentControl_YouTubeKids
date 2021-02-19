@@ -1,6 +1,6 @@
 Dim Processes,Process
 Dim CurrTime, stoptime, hourintime 
-hourintime = InputBox("Screen time")
+'hourintime = InputBox("Screen time")
 CurrTime = Now()
 stoptime = DateAdd("h", 1, now())
 
