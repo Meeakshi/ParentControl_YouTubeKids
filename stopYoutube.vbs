@@ -4,10 +4,8 @@ hourintime = InputBox("Screen time")
 CurrTime = Now()
 stoptime = DateAdd("h", 1, now())
 
-msgbox(now() & stoptime)
 
 do While(now()<>stoptime)
-msgbox("Test")
 Loop
 Set Processes = GetObject("winmgmts:").InstancesOf("Win32_Process")
 For Each Process In Processes
@@ -18,5 +16,4 @@ For Each Process In Processes
 
 Next
 
-msgbox("Test Quit")
 WScript.Quit
